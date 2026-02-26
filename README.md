@@ -1,6 +1,7 @@
 # 🎬 Recommendation System Regarding IMDb
 
 This repository contains a **Movie Recommendation System** designed to propose *similar movies* based on the one you like. It uses IMDb data to analyze movie descriptions, genres, and other metadata to generate relevant suggestions.
+Notably, this program relies heavily on GPU.
 
 ---
 
