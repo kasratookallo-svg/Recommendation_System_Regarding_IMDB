@@ -1,22 +1,24 @@
 # 🎬 Recommendation System Regarding IMDb
 
-This repository contains a **Movie Recommendation System** designed to propose *similar movies* based on the one you like. It uses IMDb data to analyze movie descriptions, genres, and other metadata to generate relevant suggestions.
-Notably, this program relies heavily on GPU.
+This repository hosts a **Movie Recommendation System** built to suggest *similar movies* to a given title using data from IMDb.  
+It leverages **GPU acceleration** through [RAPIDS cuDF](https://rapids.ai/) and **Nearest Neighbors** algorithms to deliver fast, efficient content-based recommendations.
 
 ---
 
 ## 🚀 Overview
 
-The main goal of this project is to create a recommendation engine that helps users discover new movies similar to their selected titles. It leverages machine learning techniques to compute similarities between movies based on content features and other metrics.
+The system computes similarity between movies based on textual and categorical features such as genres and descriptions.  
+Using **cuDF**, large datasets are processed directly on the GPU, drastically improving performance compared to traditional pandas workflows.
 
 ---
 
 ## 🧠 Key Features
 
-- Suggests similar movies using IMDb-based datasets  
-- Content-based recommendation approach (TF-IDF and cosine similarity)  
-- Easy-to-use command-line or notebook interface  
-- Scalable design for integration with web or mobile apps  
+- **GPU-powered data processing** with cuDF (RAPIDS)  
+- **NearestNeighbors model** for fast similarity search  
+- **Content-based recommendation** using TF-IDF and vector similarity  
+- Simple CLI or notebook interface for experimentation  
+- Scalable design suitable for production integration
 
 ---
 
@@ -24,17 +26,18 @@ The main goal of this project is to create a recommendation engine that helps us
 
 | Component | Purpose |
 |------------|----------|
-| **Python 3.x** | Core programming language |
-| **pandas** | Data manipulation |
-| **scikit-learn** | Machine learning components |
-| **numpy** | Numerical operations |
-| **Jupyter Notebook** | Development and visualization environment |
+| **Python 3.x** | Programming language |
+| **cuDF** | GPU DataFrame library for high-speed data manipulation |
+| **scikit-learn / cuML** | NearestNeighbors and ML models |
+| **numpy** | Numerical computations |
+| **pandas** | Compatibility layer |
+| **Jupyter Notebook** | Interactive exploration |
 
 ---
 
 ## 📦 Installation
 
-Clone this repository and install dependencies:
+Make sure you have an environment with CUDA support.
 ```bash
 git clone https://github.com/kasratookallo-svg/Recommendation_System_Regarding_IMDB.git
 cd Recommendation_System_Regarding_IMDB
